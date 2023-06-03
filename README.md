@@ -31,7 +31,7 @@ image: "Cover_image_machine_learning.png"
 
 ### Background
 
-Theory of mind (ToM) refers to the ability to understand people's mental states and use them to predict people’s behaviors; therefore, ToM plays a crucial role in social interactions, communication, and cognitive development. Previous study showed that people with higher ToM ability exhibit stronger functional connectivity than those with lower ToM ability (Marchetti et al., 2015). With this finding, we might be able to use children's functional connectivity signatures to predict their ToM ability. Thus, our project goal is to make use of the machine learning techniques we learned in Brainhack School to predict children’s ToM ability based on their resting-state functional connectivity.
+Theory of mind (ToM) refers to the ability to understand people's mental states and use them to predict people’s behaviors; therefore, ToM plays a crucial role in social interactions, communication, and cognitive development. Previous study showed that people with higher ToM ability exhibit stronger functional connectivity than those with lower ToM ability (Marchetti et al., 2015). With this finding, we might be able to use children's functional connectivity signature to predict their ToM ability. Thus, our project goal is to make use of the machine learning techniques we learned in Brainhack School to predict children’s ToM ability based on their resting-state functional connectivity.
 
 ### Tools
 
@@ -84,7 +84,7 @@ This project was initiated by Wei-Hung Lin and Syuan-Yu Lin on 30th May 2023 as 
 
 ## Conclusion
 
-This project aimed to employ the knowledge in data visualization and machine learning techniques we learned in Brainhack School 2023 with neuroimaging data. The results of machine learning models reveal the coherent functional connectivity findings, even though the model still requires improvement in predicting children’s ToM ability based on their functional connectivity. 
+This project aims to employ the knowledge in data visualization and machine learning techniques we learned in Brainhack School 2023 with neuroimaging data. The results of machine learning models reveal the coherent functional connectivity findings, even though the model still requires improvement in predicting children’s ToM ability based on their functional connectivity. 
 
 In this exploratory project, we observed the pivotal role of OFC connections in predicting ToM ability. This finding is intriguing as we did not set any ROIs in our machine learning analysis, yet our results are consistent with previous research suggesting the importance of the OFC/vmPFC in ToM ability (Abu-Akel & Shamay-Tsoory, 2011; Leopold et al., 2012). 
 
