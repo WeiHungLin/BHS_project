@@ -1,29 +1,29 @@
 ---
 type: "project" # DON'T TOUCH THIS ! :)
-date: "2020-05-16" # Date you first upload your project.
+date: "2020-06-05" # Date you first upload your project.
 # Title of your project (we like creative title)
-title: "This is an example project page which serves as a template"
+title: "Unveiling Children's Theory of Mind with rs-fMRI"
 
 # List the names of the collaborators within the [ ]. If alone, simple put your name within []
-names: [Samuel Guay, Pierre Bellec]
+names: [Wei-Hung Lin, Syuan-Yu Lin]
 
 # Your project GitHub repository URL
-github_repo: https://github.com/PSY6983-2021/project_template
+github_repo: https://github.com/WeiHungLin/Unveiling_children_ToM_with_rsfmri
 
 # If you are working on a project that has website, indicate the full url including "https://" below or leave it empty.
-website:
+website: 
 
 # List +- 4 keywords that best describe your project within []. Note that the project summary also involves a number of key words. Those are listed on top of the [github repository](https://github.com/PSY6983-2021/project_template), click `manage topics`.
 # Please only lowercase letters
-tags: [project, github, markdown, brainhack]
+tags: [theory of mind, rs-fmri, machine learning]
 
-# Summarize your project in < ~75 words. This description will appear at the top of your page and on the list page with other projects..
+# Summarize your project in < ~75 words. This description will appear at the top of your page and on the list page with other projects.
 
-summary: "Each project repository should have a markdown file explaining the background and objectives of the project, as well as a summary of the results, and links to the different deliverables of the project. Project reports are incorporated in the BHS [website](https://psy6983.brainhackmtl.org/project)."
+summary: "Can functional connectivity bed used to predict children’s theory of mind (ToM)? This project utilizes supervised machine learning algorithms on the fMRI data to predict children’s ToM ability. For better visualization, the most contributing brain region connections are displayed on the brain."
 
 # If you want to add a cover image (listpage and image in the right), add it to your directory and indicate the name
 # below with the extension.
-image: ""
+image: "Cover_image_machine_learning.png"
 ---
 <!-- This is an html comment and this won't appear in the rendered page. You are now editing the "content" area, the core of your description. Everything that you can do in markdown is allowed below. We added a couple of comments to guide your through documenting your progress. -->
 
@@ -31,73 +31,76 @@ image: ""
 
 ### Background
 
-Inspired by the [Recurse Centre](https://www.recurse.com/) initiative (formally known as the "hacker school"), Brainhack School was established in 2018 with the mission to train students from multidisciplinary backgrounds to a panoply of reproducible tools for neural data science, using a project-based approach. Following an initial 3-weeks long pilot, a 4th week was added with an intensive bootcamp, so that students could choose what tools to learn more deeply in their projects. As the course became integrated in standard curriculum at different universities, the formula seemed to be working. In order to streamline the different stages of the project, some standard template and milestones needed to be incorporated in a github-based workflow. The "project template" project (which is also our first BHS meta-project) aims at establishing such a standardized template. You can check the following [video](https://youtu.be/PTYs_JFKsHI) where Pierre Bellec gives an overview of the Brainhack school.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PTYs_JFKsHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Theory of mind (ToM) refers to the ability to understand people's mental states and use them to predict people’s behaviors; therefore, ToM plays a crucial role in social interactions, communication, and cognitive development. Previous study showed that people with higher ToM ability exhibit stronger functional connectivity than those with lower ToM ability (Marchetti et al., 2015). With this finding, we might be able to use children's functional connectivity signatures to predict their ToM ability. Thus, our project goal is to make use of the machine learning techniques we learned in Brainhack School to predict children’s ToM ability based on their resting-state functional connectivity.
 
 ### Tools
 
-The "project template" project will rely on the following technologies:
- * Markdown, to structure the text.
- * The Hugo website framework which is used by the BHS website. This makes it possible to easily add the markdown project description to the website.
- * Adding the project to the website relies on github, through pull requests.
+This project relys on the following technologies:
+ * Matplotlib and seaborn for data visualization
+ * Nilearn and scikit-learn for constructing machine learning algorithms
+ * VS Code and Google Colab for programming
+ * GitHub for Version Control
 
 ### Data
 
-Ultimately, the project template will be used by all BHS participants. Data on the different projects will be aggregareted on the [following page](https://psy6983.brainhackmtl.org/project). This will serve as an additional example gallery in the years to come for future brainhack school students. Many reports from [BHS 2020](https://github.com/brainhack-school2020) already used this template.
+We selected a preprocessed resting-state fMRI dataset from Nilearn Development fMRI to conduct our project. This rs-fMRI dataset comes from a study focusing on investigating the development of functionally specialized social brain regions, and the participants watched a short film while undergoing fMRI in the study. All children completed a custom-made explicit ToM task to measure their ToM ability. In our project, we mainly focused on the relationship between children’s ToM scores and the functional connectivity of the brain regions. 
 
 ### Deliverables
 
 At the end of this project, we will have:
- - The current markdown document, completed and revised.
- - A gallery of the student projects at Brainhack 2020.
- - Instructions on the website about how to submit a pull request to the [brainhack school website](https://github.com/PSY6983-2021) in order to add the project description to the website.
+ - Predictive models with evaluation scores and figure
+ - Interactive figures
+ - Presentation slides and video
+ - Project Report
+
+## Project Presentation
+
+<iframe width="560" height="315" src="https://youtu.be/uibv_AtFWyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Results
 
 ### Progress overview
 
-The project was swiftly initiated by P Bellec, based on the existing template created in 2019 by Tristan Glatard and improved by different students. It was really not that hard. Community feedback is expected to lead to rapid further improvements of this first version.
+This project was initiated by Wei-Hung Lin and Syuan-Yu Lin on 30th May 2023 as the part of the Brainhack school, and the final presentation was delivered on 1st June 2023. The deliverables include python code, interactive plot, presentation slides and video.
 
 ### Tools I learned during this project
 
- * **Meta-project** P Bellec learned how to do a meta project for the first time, which is developping a framework while using it at the same time. It felt really weird, but somehow quite fun as well.
- * **Github workflow-** The successful use of this template approach will demonstrate that it is possible to incorporate dozens of students presentation on a website collaboratively over a few weeks.
- * **Project content** Through the project reports generated using the template, it is possible to learn about what exactly the brainhack school students are working on.
+ * Nilearn: Python package for processing and visualizing neuroimaging data
+ * Scikit-learn: Python package for conducting machine learning and evaluating the predictive model
+ * Jupyter Notebook: Creating project slides
 
 ### Results
 
-#### Deliverable 1: report template
+#### Deliverable 1: Predictive models with evaluation scores and figure
 
-You are currently reading the report template! I will let you judge whether it is useful or not. If you think there is something that could be improved, please do not hesitate to open an issue [here](https://github.com/PSY6983-2021/project_template/issues/) and let us know.
+![Regression figure and the model evaluation scores](https://github.com/WeiHungLin/Unveiling_children_ToM_with_rsfmri/blob/main/Regression_figure_with_evaluation_scores.png)
 
-#### Deliverable 2: project gallery
+#### Deliverable 2: Interactive figures
 
-You can check out the [2020 BrainHack School project gallery](https://psy6983.brainhackmtl.org/project/)
+![Feature matrix and contributing brain region connectomes](https://github.com/WeiHungLin/Unveiling_children_ToM_with_rsfmri/blob/main/Static_connectome.png)
 
-##### ECG pupilometry pipeline by Marce Kauffmann
+![Interactive Brain Connectomes Video](https://github.com/WeiHungLin/Unveiling_children_ToM_with_rsfmri/blob/main/Interactive_Figure.mp4)
 
-The repository of this project can be found [here](https://github.com/mtl-brainhack-school-2019/ecg_pupillometry_pipeline_kaufmann). The objective was to create a processing pipeline for ECG and pupillometry data. The motivation behind this task is that Marcel's lab (MIST Lab @ Polytechnique Montreal) was conducting a Human-Robot-Interaction user study. The repo features:
- * a [video introduction](http://www.youtube.com/watch/8ZVCNeX42_A) to the project.
- * a presentation [made in a jupyter notebook](https://github.com/mtl-brainhack-school-2019/ecg_pupillometry_pipeline_kaufmann/blob/master/BrainHackPresentation.ipynb) on the results of the project.
- * Notebooks for all analyses.
- * Detailed requirements files, making it easy for others to replicate the environment of the notebook.
- * An overview of the results in the markdown document.
 
-##### Other projects
-Here are other good examples of repositories:
-- [Learning to manipulate biosignals with python](https://github.com/mtl-brainhack-school-2019/franclespinas-biosignals) by François Lespinasse
-- [Run multivariate anaylysis to relate behavioral and electropyhysiological data](https://github.com/mtl-brainhack-school-2019/PLS_PV_Behaviour)
-- [PET pipeline automation and structural MRI exploration](https://github.com/mtl-brainhack-school-2019/rwickens-sMRI-PET) by Rebekah Wickens
-- [Working with PSG [EEG] data from Parkinson's patients](https://github.com/mtl-brainhack-school-2019/Soraya-sleep-data-in-PD-patients) by Cryomatrix
-- [Exploring Brain Functional Activation in Adolescents Who Attempted Suicide](https://github.com/mtl-brainhack-school-2019/Anthony-Gifuni-repo) by Anthony Gifuni
+## Conclusion
 
-#### Deliverable 3: Instructions
+This project aimed to employ the knowledge in data visualization and machine learning techniques we learned in Brainhack School 2023 with neuroimaging data. The results of machine learning models reveal the coherent functional connectivity findings, even though the model still requires improvement in predicting children’s ToM ability based on their functional connectivity. 
 
- To be made available soon.
+In this exploratory project, we observed the pivotal role of OFC connections in predicting ToM ability. This finding is intriguing as we did not set any ROIs in our machine learning analysis, yet our results are consistent with previous research suggesting the importance of the OFC/vmPFC in ToM ability (Abu-Akel & Shamay-Tsoory, 2011; Leopold et al., 2012). 
 
-## Conclusion and acknowledgement
+However, the regression figure and the evaluation scores indicate that the current model only explains limited variance in the given data, and there could be two reasons for this:
 
-The BHS team hope you will find this template helpful in documenting your project. Developping this template was a group effort, and benefitted from the feedback and ideas of all BHS students over the years.
+ * The ToM score is negatively skewed and may somehow violate the linear model assumption. In addition, age is the significant confounding variable in predicting ToM ability in children. To increase the model predictability, we can transform the ToM score and contain age into the model.
+ * In the current study, a parcellation scheme comprising 64 brain regions was utilized, with a majority of regions located in the left hemisphere. Previous research indicates that the development of ToM ability is more closely associated with the left hemisphere compared to the right hemisphere (Marchetti et al., 2015). However, to capture a more comprehensive understanding of the relationship between functional connectivity and ToM ability, the use of a bilateral atlas can be considered. Alternatively, focusing on primary ROIs, such as the prefrontal cortex, may provide deeper insights into the association between functional connectivity and ToM ability.
 
-You can also make submit your project to neurolibre https://neurolibre.org/. It is a preprint server for interactive data analyses. It is tailored for publishing interactive neuroscience notebooks that can seamlessly integrate data, text, code and figures.The submission instructions can be found here https://docs.neurolibre.org/en/latest/index.html and the jupyter book docs there https://jupyterbook.org/intro.html.
+Overall, this preliminary project provides some inspiring findings, but we still need to try other machine learning algorithms and more data to develop a more robust model to predict the ToM ability with functional connectivity.
+ 
+## Acknowledgement
+Gratitude to all the organizers, instructors, TAs, and fellow participants from all around the world who helped us learn all these cool open neuroscience tools and give us this opportunity to connect with all the great neuroscientists in the world. 
+
+Special thanks to our instructor Charlene Lee, and our TA Ingrid Chuang for their inspiring work and assistance with our project.
+
+## Reference
+* Abu-Akel, A., & Shamay-Tsoory, S. (2011). Neuroanatomical and neurochemical bases of theory of mind. Neuropsychologia, 49(11), 2971-2984.
+* Leopold, A., Krueger, F., dal Monte, O., Pardini, M., Pulaski, S. J., Solomon, J., & Grafman, J. (2012). Damage to the left ventromedial prefrontal cortex impacts affective theory of mind. Social Cognitive and Affective Neuroscience, 7(8), 871-880.
+* Marchetti, A., Baglio, F., Costantini, I., Dipasquale, O., Savazzi, F., Nemni, R., ... & Castelli, I. (2015). Theory of mind and the whole brain functional connectivity: Behavioral and neural evidences with the Amsterdam Resting State Questionnaire. Frontiers in psychology, 6, 1855.
