@@ -75,7 +75,7 @@ This project was initiated by Wei-Hung Lin and Syuan-Yu Lin on 30th May 2023 as 
 
 ![Regression figure and the model evaluation scores](https://github.com/WeiHungLin/Unveiling_children_ToM_with_rsfmri/blob/main/Regression_figure_with_evaluation_scores.png)
 
-#### Deliverable 2: Interactive figures
+#### Deliverable 2: Static and interactive figures
 
 ![Feature matrix and contributing brain region connectomes](https://github.com/WeiHungLin/Unveiling_children_ToM_with_rsfmri/blob/main/Static_connectome.png)
 
